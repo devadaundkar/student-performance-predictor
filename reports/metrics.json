@@ -1,0 +1,71 @@
+{
+  "model_name": "Ridge",
+  "test_metrics": {
+    "mae": 3.533,
+    "rmse": 4.338,
+    "r2": 0.805
+  },
+  "comparison": [
+    {
+      "model": "Linear Regression",
+      "cv_rmse": 4.939,
+      "mae": 3.523,
+      "rmse": 4.33,
+      "r2": 0.806
+    },
+    {
+      "model": "Ridge",
+      "cv_rmse": 4.937,
+      "mae": 3.533,
+      "rmse": 4.338,
+      "r2": 0.805
+    },
+    {
+      "model": "Random Forest",
+      "cv_rmse": 5.919,
+      "mae": 4.061,
+      "rmse": 5.087,
+      "r2": 0.732
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_rmse": 5.87,
+      "mae": 3.593,
+      "rmse": 4.432,
+      "r2": 0.797
+    },
+    {
+      "model": "Gradient Boosting (tuned)",
+      "cv_rmse": 5.77,
+      "mae": 3.718,
+      "rmse": 4.64,
+      "r2": 0.777
+    }
+  ],
+  "feature_importance": {
+    "study_hours": 0.076,
+    "attendance": 0.939,
+    "previous_score": 5.841,
+    "sleep_hours": 0.002,
+    "extra_classes": 0.662,
+    "parental_education_years": 0.219,
+    "study_hours_log": 6.987,
+    "sleep_deviation": 1.425,
+    "effort_index": 0.142,
+    "attendance_band": -0.011
+  },
+  "n_train": 392,
+  "n_test": 99,
+  "feature_columns": [
+    "study_hours",
+    "attendance",
+    "previous_score",
+    "sleep_hours",
+    "extra_classes",
+    "parental_education_years",
+    "study_hours_log",
+    "sleep_deviation",
+    "effort_index",
+    "attendance_band"
+  ]
+}
